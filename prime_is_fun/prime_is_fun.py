@@ -15,16 +15,18 @@ print("Welcome to prime fun program")
 while True:
     
     #prompt user
-    print("Enter 1 to start, or 0 to exit")
+    print("Enter 1 to graph n[2,100].")
+    print("Enter 2 to p(n).")
+    print("Enter 0 to exit.")
 
-    n = int(input("choice: "))
+    choice = int(input("choice: "))
     
     #user enters 0 break loop
-    if n == 0:
+    if choice == 0:
         break
-    
-    #else continue
-    else:
+        
+    #user enters 1 graph n[2,100]
+    elif choice == 1:
         
         #create list that points will go into
         x_points = []
@@ -65,6 +67,19 @@ while True:
         
         #print graph
         plt.show()
+     
+    #user enters 2 get p(n)
+    elif choice == 2:
+        
+        #promts user for n value
+        n = int(input("n: "))
+        
+        num_of_p = prime.Prime(n).number_primes()
+        print("p(",n,")"," = ",num_of_p)
+        
+        
+        
+        
         
     
     
