@@ -1,8 +1,10 @@
-#object class
+#object class with functions related to prime numbers
 #Alejandro Rodriguez
 #10/6/23
 
 import math
+
+
 
 class Prime():
     
@@ -57,7 +59,7 @@ class Prime():
         prime_list = []
         
         #itterate thru all integers 2 -> n
-        for x in range(2,self.n+1):
+        for x in range(2,self.n):
             
             #if n is prime, add n to list of primes
             if self.prime_checker(x) == True:
